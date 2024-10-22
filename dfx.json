@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "Cost_Calculator_backend": {
+      "main": "src/Cost_Calculator_backend/main.mo",
+      "type": "motoko"
+    },
+    "Second_Canister": {
+      "main": "src/Second_Canister/main.mo",
+      "type": "motoko"
+    },
+    "Cost_Calculator_frontend": {
+      "dependencies": [
+        "Cost_Calculator_backend"
+      ],
+      "source": [
+        "src/Cost_Calculator_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Cost_Calculator_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
